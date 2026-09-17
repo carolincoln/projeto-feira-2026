@@ -1,0 +1,55 @@
+#sobre {
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#sobre img {
+    max-height: 30vh;
+    max-width: 30vh;
+}
+
+#sobre span {
+    font-size: clamp(0.5em, 5vw, 1.5em);
+    text-align: justify;
+    width: 50%;
+}
+
+#sobre div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25em;
+    font-size: 1.5em;
+
+}
+
+#sobre div hr {
+    width: 100%;
+}
+
+#sobre div h2 {
+    font-size: clamp(1em, 5vw, 1.5em);
+    align-items: center;
+}
+
+@media (max-width: 800px)
+{
+    #sobre {
+        flex-direction: column-reverse;
+        height: auto;
+        justify-content: space-around;
+    }
+
+    #sobre img {
+        max-height: 20vh;
+    }
+
+    #sobre span {
+        width: 70%
+    }
+
+
+}

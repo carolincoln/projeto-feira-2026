@@ -1,0 +1,28 @@
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 25vh;
+    gap: 1em;
+}
+
+footer img {
+    height: 15vh;
+}
+
+footer a {
+    color: blue;
+    transition: 1s;
+    transform: scale(1, 1);
+}
+
+footer a:hover {
+    transform: scale(1.25, 1.25);
+}
+
+@media (max-width: 800px) {
+    
+    footer {
+        height: 40vh;
+    }
+}

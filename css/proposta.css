@@ -1,0 +1,46 @@
+#proposta {
+    display: flex;
+    height: 50vh;
+    justify-content:space-around;
+    align-items: center;
+}
+
+#proposta div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 1.5em;
+}
+
+#proposta hr {
+    width: 100%;
+}
+
+#proposta img {
+    height: 30vh;
+}
+
+#proposta span {
+    text-align: justify;
+    width: 50%;
+    font-size: clamp(0.5em, 5vw, 1.25em);
+}
+
+@media (max-width: 800px) {
+    
+    #proposta {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: space-around;
+    }
+
+    #proposta img {
+        height: 20vh;
+    }
+
+    #proposta span {
+        width: 70%;
+    }
+}
